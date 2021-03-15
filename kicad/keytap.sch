@@ -26,89 +26,215 @@ F 4 "XXX-00000" H 3300 4781 60  0000 C CNN "Field4"
 	1    3300 4050
 	1    0    0    -1  
 $EndComp
+NoConn ~ 3750 3500
+Wire Notes Line
+	10450 3850 10450 900 
+Wire Notes Line
+	4550 900  4550 3850
+Text Notes 7200 1000 0    50   ~ 0
+Display\n
+Wire Notes Line
+	10450 900  4550 900 
+Wire Notes Line
+	4550 3850 10450 3850
+Text Label 8850 2900 0    50   ~ 0
+R
+Text Label 8850 2200 0    50   ~ 0
+G
+Text Label 8850 1500 0    50   ~ 0
+B
 $Comp
-L symbols:ACD8143 U?
-U 1 1 60516EEB
-P 6050 3800
-F 0 "U?" H 6050 4365 50  0000 C CNN
-F 1 "ACD8143" H 6050 4274 50  0000 C CNN
-F 2 "" H 6050 4125 50  0001 C CNN
-F 3 "http://www.electronics123.net/amazon/datasheet/ACD8143.pdf" H 6050 4125 50  0001 C CNN
-	1    6050 3800
+L power:+5V #PWR?
+U 1 1 6054BA8F
+P 7600 1500
+F 0 "#PWR?" H 7600 1350 50  0001 C CNN
+F 1 "+5V" H 7615 1673 50  0000 C CNN
+F 2 "" H 7600 1500 50  0001 C CNN
+F 3 "" H 7600 1500 50  0001 C CNN
+	1    7600 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 1500 7600 1500
+$Comp
+L power:GND #PWR?
+U 1 1 60549B2E
+P 7900 3400
+F 0 "#PWR?" H 7900 3150 50  0001 C CNN
+F 1 "GND" H 7905 3227 50  0000 C CNN
+F 2 "" H 7900 3400 50  0001 C CNN
+F 3 "" H 7900 3400 50  0001 C CNN
+	1    7900 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 1800 8650 1800
+Wire Wire Line
+	8650 2100 8650 2500
+Wire Wire Line
+	8400 2100 8650 2100
+Wire Wire Line
+	8500 3200 8650 3200
+Wire Wire Line
+	8500 2400 8500 3200
+Wire Wire Line
+	8400 2400 8500 2400
+Wire Wire Line
+	7050 1900 7400 2100
+NoConn ~ 8400 2700
+NoConn ~ 7400 2800
+NoConn ~ 7400 2700
+Wire Wire Line
+	7050 2300 7400 2500
+Wire Wire Line
+	7050 2000 7400 2400
+Wire Wire Line
+	7050 2200 7400 2200
+Wire Wire Line
+	7050 2100 7400 1900
+Wire Wire Line
+	7050 1800 7400 1800
+$Comp
+L 74xx:74LS257 U?
+U 1 1 6053347F
+P 7900 2400
+F 0 "U?" H 7900 3481 50  0000 C CNN
+F 1 "74LS257" H 7900 3390 50  0000 C CNN
+F 2 "" H 7900 2400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS257" H 7900 2400 50  0001 C CNN
+	1    7900 2400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_US R?
 U 1 1 605193CF
-P 7050 3500
-F 0 "R?" V 6845 3500 50  0000 C CNN
-F 1 "R_US" V 6936 3500 50  0000 C CNN
-F 2 "" V 7090 3490 50  0001 C CNN
-F 3 "~" H 7050 3500 50  0001 C CNN
-	1    7050 3500
-	0    1    1    0   
+P 9300 1800
+F 0 "R?" V 9095 1800 50  0000 C CNN
+F 1 "R_US" V 9186 1800 50  0000 C CNN
+F 2 "" V 9340 1790 50  0001 C CNN
+F 3 "~" H 9300 1800 50  0001 C CNN
+	1    9300 1800
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_US R?
 U 1 1 60521D62
-P 7350 3700
-F 0 "R?" V 7145 3700 50  0000 C CNN
-F 1 "R_US" V 7236 3700 50  0000 C CNN
-F 2 "" V 7390 3690 50  0001 C CNN
-F 3 "~" H 7350 3700 50  0001 C CNN
-	1    7350 3700
-	0    1    1    0   
+P 9600 1800
+F 0 "R?" V 9395 1800 50  0000 C CNN
+F 1 "R_US" V 9486 1800 50  0000 C CNN
+F 2 "" V 9640 1790 50  0001 C CNN
+F 3 "~" H 9600 1800 50  0001 C CNN
+	1    9600 1800
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6700 3500 6900 3500
-Wire Wire Line
-	7200 3500 7200 3700
-Wire Wire Line
-	7200 3700 6700 3700
-Connection ~ 7200 3700
-Wire Wire Line
-	6700 4000 7200 4000
-Wire Wire Line
-	7200 4000 7200 3700
-Wire Wire Line
-	6700 3600 6900 3600
-Wire Wire Line
-	6900 3600 6900 3500
-Connection ~ 6900 3500
-Wire Wire Line
-	6700 3800 6900 3800
-Wire Wire Line
-	6900 3800 6900 3600
-Connection ~ 6900 3600
-Wire Wire Line
-	6700 3900 6900 3900
-Wire Wire Line
-	6900 3900 6900 3800
-Connection ~ 6900 3800
 $Comp
 L power:GND #PWR?
 U 1 1 605250D9
-P 7500 3700
-F 0 "#PWR?" H 7500 3450 50  0001 C CNN
-F 1 "GND" H 7505 3527 50  0000 C CNN
-F 2 "" H 7500 3700 50  0001 C CNN
-F 3 "" H 7500 3700 50  0001 C CNN
-	1    7500 3700
+P 9750 1800
+F 0 "#PWR?" H 9750 1550 50  0001 C CNN
+F 1 "GND" H 9755 1627 50  0000 C CNN
+F 2 "" H 9750 1800 50  0001 C CNN
+F 3 "" H 9750 1800 50  0001 C CNN
+	1    9750 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:BC337 Q?
+U 1 1 604ECB31
+P 8850 1700
+F 0 "Q?" H 9041 1654 50  0000 L CNN
+F 1 "BC337" H 9041 1745 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9050 1625 50  0001 L CIN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 8850 1700 50  0001 L CNN
+	1    8850 1700
+	0    -1   1    0   
+$EndComp
+$Comp
+L Transistor_BJT:BC337 Q?
+U 1 1 604F1478
+P 8850 2400
+F 0 "Q?" H 9041 2354 50  0000 L CNN
+F 1 "BC337" H 9041 2445 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9050 2325 50  0001 L CIN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 8850 2400 50  0001 L CNN
+	1    8850 2400
+	0    -1   1    0   
+$EndComp
+$Comp
+L Transistor_BJT:BC337 Q?
+U 1 1 604F5030
+P 8850 3100
+F 0 "Q?" H 9041 3054 50  0000 L CNN
+F 1 "BC337" H 9041 3145 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9050 3025 50  0001 L CIN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 8850 3100 50  0001 L CNN
+	1    8850 3100
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	9050 2500 9050 1800
+Wire Wire Line
+	9150 1800 9050 1800
+Connection ~ 9050 1800
+Wire Wire Line
+	9050 3200 9450 3200
+Wire Wire Line
+	9450 3200 9450 1800
+Connection ~ 9450 1800
+$Comp
+L 74xx:74HC595 U?
+U 1 1 605261F8
+P 5150 2200
+F 0 "U?" H 5150 2981 50  0000 C CNN
+F 1 "74HC595" H 5150 2890 50  0000 C CNN
+F 2 "" H 5150 2200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 5150 2200 50  0001 C CNN
+	1    5150 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6052984A
+P 5150 2900
+F 0 "#PWR?" H 5150 2650 50  0001 C CNN
+F 1 "GND" H 5155 2727 50  0000 C CNN
+F 2 "" H 5150 2900 50  0001 C CNN
+F 3 "" H 5150 2900 50  0001 C CNN
+	1    5150 2900
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR?
-U 1 1 6052A41E
-P 3750 3800
-F 0 "#PWR?" H 3750 3650 50  0001 C CNN
-F 1 "+5V" V 3765 3928 50  0000 L CNN
-F 2 "" H 3750 3800 50  0001 C CNN
-F 3 "" H 3750 3800 50  0001 C CNN
-	1    3750 3800
-	0    1    1    0   
+U 1 1 6052C955
+P 4850 1600
+F 0 "#PWR?" H 4850 1450 50  0001 C CNN
+F 1 "+5V" H 4865 1773 50  0000 C CNN
+F 2 "" H 4850 1600 50  0001 C CNN
+F 3 "" H 4850 1600 50  0001 C CNN
+	1    4850 1600
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6700 4300 6700 4100
+	5150 1600 4850 1600
+Wire Wire Line
+	5550 1800 5750 1800
+Wire Wire Line
+	5550 1900 5750 1900
+Wire Wire Line
+	5550 2000 5750 2000
+Wire Wire Line
+	5550 2100 5750 2100
+Wire Wire Line
+	5550 2200 5750 2200
+Wire Wire Line
+	5550 2300 5750 2300
+Wire Wire Line
+	5550 2400 5750 2400
+Wire Wire Line
+	5550 2500 5700 2600
+Wire Wire Line
+	5700 2600 7050 2600
+NoConn ~ 5550 2700
 $Comp
 L power:GND #PWR?
 U 1 1 605387E2
@@ -120,59 +246,28 @@ F 3 "" H 3750 3600 50  0001 C CNN
 	1    3750 3600
 	0    -1   -1   0   
 $EndComp
-NoConn ~ 3750 3500
-NoConn ~ 5200 4400
 Wire Wire Line
-	5350 4300 6700 4300
-Wire Wire Line
-	5200 4200 5350 4300
-Wire Wire Line
-	5200 4100 5400 4100
-Wire Wire Line
-	5200 4000 5400 4000
-Wire Wire Line
-	5200 3900 5400 3900
-Wire Wire Line
-	5200 3800 5400 3800
-Wire Wire Line
-	5200 3700 5400 3700
-Wire Wire Line
-	5200 3600 5400 3600
-Wire Wire Line
-	5200 3500 5400 3500
-Wire Wire Line
-	4800 3300 4500 3300
+	7050 2600 7050 2400
 $Comp
 L power:+5V #PWR?
-U 1 1 6052C955
-P 4500 3300
-F 0 "#PWR?" H 4500 3150 50  0001 C CNN
-F 1 "+5V" H 4515 3473 50  0000 C CNN
-F 2 "" H 4500 3300 50  0001 C CNN
-F 3 "" H 4500 3300 50  0001 C CNN
-	1    4500 3300
-	1    0    0    -1  
+U 1 1 6052A41E
+P 3750 3800
+F 0 "#PWR?" H 3750 3650 50  0001 C CNN
+F 1 "+5V" V 3765 3928 50  0000 L CNN
+F 2 "" H 3750 3800 50  0001 C CNN
+F 3 "" H 3750 3800 50  0001 C CNN
+	1    3750 3800
+	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 6052984A
-P 4800 4600
-F 0 "#PWR?" H 4800 4350 50  0001 C CNN
-F 1 "GND" H 4805 4427 50  0000 C CNN
-F 2 "" H 4800 4600 50  0001 C CNN
-F 3 "" H 4800 4600 50  0001 C CNN
-	1    4800 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74HC595 U?
-U 1 1 605261F8
-P 4800 3900
-F 0 "U?" H 4800 4681 50  0000 C CNN
-F 1 "74HC595" H 4800 4590 50  0000 C CNN
-F 2 "" H 4800 3900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 4800 3900 50  0001 C CNN
-	1    4800 3900
+L symbols:ACD8143 U?
+U 1 1 60516EEB
+P 6400 2100
+F 0 "U?" H 6400 2665 50  0000 C CNN
+F 1 "ACD8143" H 6400 2574 50  0000 C CNN
+F 2 "" H 6400 2425 50  0001 C CNN
+F 3 "http://www.electronics123.net/amazon/datasheet/ACD8143.pdf" H 6400 2425 50  0001 C CNN
+	1    6400 2100
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

@@ -38,65 +38,6 @@ F 3 "http://www.electronics123.net/amazon/datasheet/ACD8143.pdf" H 6050 4125 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R?
-U 1 1 605193CF
-P 7050 3500
-F 0 "R?" V 6845 3500 50  0000 C CNN
-F 1 "R_US" V 6936 3500 50  0000 C CNN
-F 2 "" V 7090 3490 50  0001 C CNN
-F 3 "~" H 7050 3500 50  0001 C CNN
-	1    7050 3500
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 60521D62
-P 7350 3700
-F 0 "R?" V 7145 3700 50  0000 C CNN
-F 1 "R_US" V 7236 3700 50  0000 C CNN
-F 2 "" V 7390 3690 50  0001 C CNN
-F 3 "~" H 7350 3700 50  0001 C CNN
-	1    7350 3700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6700 3500 6900 3500
-Wire Wire Line
-	7200 3500 7200 3700
-Wire Wire Line
-	7200 3700 6700 3700
-Connection ~ 7200 3700
-Wire Wire Line
-	6700 4000 7200 4000
-Wire Wire Line
-	7200 4000 7200 3700
-Wire Wire Line
-	6700 3600 6900 3600
-Wire Wire Line
-	6900 3600 6900 3500
-Connection ~ 6900 3500
-Wire Wire Line
-	6700 3800 6900 3800
-Wire Wire Line
-	6900 3800 6900 3600
-Connection ~ 6900 3600
-Wire Wire Line
-	6700 3900 6900 3900
-Wire Wire Line
-	6900 3900 6900 3800
-Connection ~ 6900 3800
-$Comp
-L power:GND #PWR?
-U 1 1 605250D9
-P 7500 3700
-F 0 "#PWR?" H 7500 3450 50  0001 C CNN
-F 1 "GND" H 7505 3527 50  0000 C CNN
-F 2 "" H 7500 3700 50  0001 C CNN
-F 3 "" H 7500 3700 50  0001 C CNN
-	1    7500 3700
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR?
 U 1 1 6052A41E
 P 3750 3800
@@ -123,9 +64,9 @@ $EndComp
 NoConn ~ 3750 3500
 NoConn ~ 5200 4400
 Wire Wire Line
-	5200 4300 6700 4300
+	5350 4300 6700 4300
 Wire Wire Line
-	5200 4200 5200 4300
+	5200 4200 5350 4300
 Wire Wire Line
 	5200 4100 5400 4100
 Wire Wire Line
@@ -175,4 +116,158 @@ F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 4800 3900 50  0001 C CNN
 	1    4800 3900
 	1    0    0    -1  
 $EndComp
+Connection ~ 9100 3500
+Wire Wire Line
+	9100 4900 9100 3500
+Wire Wire Line
+	8700 4900 9100 4900
+Connection ~ 8700 3500
+Wire Wire Line
+	8800 3500 8700 3500
+Wire Wire Line
+	8700 4200 8700 3500
+$Comp
+L Transistor_BJT:BC337 Q?
+U 1 1 604F5030
+P 8500 4800
+F 0 "Q?" H 8691 4754 50  0000 L CNN
+F 1 "BC337" H 8691 4845 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8700 4725 50  0001 L CIN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 8500 4800 50  0001 L CNN
+	1    8500 4800
+	0    -1   1    0   
+$EndComp
+$Comp
+L Transistor_BJT:BC337 Q?
+U 1 1 604F1478
+P 8500 4100
+F 0 "Q?" H 8691 4054 50  0000 L CNN
+F 1 "BC337" H 8691 4145 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8700 4025 50  0001 L CIN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 8500 4100 50  0001 L CNN
+	1    8500 4100
+	0    -1   1    0   
+$EndComp
+$Comp
+L Transistor_BJT:BC337 Q?
+U 1 1 604ECB31
+P 8500 3400
+F 0 "Q?" H 8691 3354 50  0000 L CNN
+F 1 "BC337" H 8691 3445 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8700 3325 50  0001 L CIN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 8500 3400 50  0001 L CNN
+	1    8500 3400
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 605250D9
+P 9400 3500
+F 0 "#PWR?" H 9400 3250 50  0001 C CNN
+F 1 "GND" H 9405 3327 50  0000 C CNN
+F 2 "" H 9400 3500 50  0001 C CNN
+F 3 "" H 9400 3500 50  0001 C CNN
+	1    9400 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 60521D62
+P 9250 3500
+F 0 "R?" V 9045 3500 50  0000 C CNN
+F 1 "R_US" V 9136 3500 50  0000 C CNN
+F 2 "" V 9290 3490 50  0001 C CNN
+F 3 "~" H 9250 3500 50  0001 C CNN
+	1    9250 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 605193CF
+P 8950 3500
+F 0 "R?" V 8745 3500 50  0000 C CNN
+F 1 "R_US" V 8836 3500 50  0000 C CNN
+F 2 "" V 8990 3490 50  0001 C CNN
+F 3 "~" H 8950 3500 50  0001 C CNN
+	1    8950 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 74xx:74LS257 U?
+U 1 1 6053347F
+P 7550 4100
+F 0 "U?" H 7550 5181 50  0000 C CNN
+F 1 "74LS257" H 7550 5090 50  0000 C CNN
+F 2 "" H 7550 4100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS257" H 7550 4100 50  0001 C CNN
+	1    7550 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3500 7050 3500
+Wire Wire Line
+	6700 3800 7050 3600
+Wire Wire Line
+	6700 3900 7050 3900
+Wire Wire Line
+	6700 3700 7050 4100
+Wire Wire Line
+	6700 4000 7050 4200
+NoConn ~ 7050 4400
+NoConn ~ 7050 4500
+NoConn ~ 8050 4400
+Wire Wire Line
+	6700 3600 7050 3800
+Wire Wire Line
+	8050 4100 8150 4100
+Wire Wire Line
+	8150 4100 8150 4900
+Wire Wire Line
+	8150 4900 8300 4900
+Wire Wire Line
+	8050 3800 8300 3800
+Wire Wire Line
+	8300 3800 8300 4200
+Wire Wire Line
+	8050 3500 8300 3500
+$Comp
+L power:GND #PWR?
+U 1 1 60549B2E
+P 7550 5100
+F 0 "#PWR?" H 7550 4850 50  0001 C CNN
+F 1 "GND" H 7555 4927 50  0000 C CNN
+F 2 "" H 7550 5100 50  0001 C CNN
+F 3 "" H 7550 5100 50  0001 C CNN
+	1    7550 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 3200 7250 3200
+$Comp
+L power:+5V #PWR?
+U 1 1 6054BA8F
+P 7250 3200
+F 0 "#PWR?" H 7250 3050 50  0001 C CNN
+F 1 "+5V" H 7265 3373 50  0000 C CNN
+F 2 "" H 7250 3200 50  0001 C CNN
+F 3 "" H 7250 3200 50  0001 C CNN
+	1    7250 3200
+	1    0    0    -1  
+$EndComp
+Text Label 8500 3200 0    50   ~ 0
+B
+Text Label 8500 3900 0    50   ~ 0
+G
+Text Label 8500 4600 0    50   ~ 0
+R
+Wire Notes Line
+	4200 2600 4200 5550
+Wire Notes Line
+	4200 5550 10100 5550
+Wire Notes Line
+	10100 5550 10100 2600
+Wire Notes Line
+	10100 2600 4200 2600
+Text Notes 6850 2700 0    50   ~ 0
+Display\n
 $EndSCHEMATC
